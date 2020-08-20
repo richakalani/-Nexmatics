@@ -1,0 +1,31 @@
+.navbar-nav a:hover {
+  color: blue !important;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+.navbar-nav li > a {
+  text-transform: capitalize;
+  color: #333;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+&:hover,
+&:focus {
+  background-color: #333;
+}
+
+.navbar-nav li.active > a {
+  background-color: #a6b9ff;
+  color: #fff;
+}
+
+/* .card-title {
+  font-size: 60px;
+} */
+.navbar-nav > li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
