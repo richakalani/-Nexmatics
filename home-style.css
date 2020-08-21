@@ -41,19 +41,6 @@ body {
     }
   }
 
-  /*out team text*/
-
-  .text-4 {
-    position: relative;
-
-    text-align: left;
-
-    padding-top: 35vh;
-  }
-
-  .text-5 {
-    position: relative;
-  }
   /* page-1 */
   #info {
     position: absolute;
@@ -326,294 +313,24 @@ body {
 
     font-size: 15px;
   }
-  /* Variables */ /* Reset */
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } /* Generic */
-  /*body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #c4c4c4;
-}*/
 
   #team {
-    text-align: left;
+    /* text-align: left;
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #c4c4c4;
-  }
-  .main {
-    text-align: left;
+    background-color: #c4c4c4; */
+    padding-top: 10vh;
+    position: relative;
+    background: #fff;
     width: 100vw;
     height: 100vh;
-    position: relative;
-    transform: scale(0.5);
-  }
-
-  .windmill {
-    position: absolute;
-    left: 40%;
-    top: 20vh;
-    text-align: left;
-  }
-
-  .hills {
-    width: 60vw;
-    height: 20vh;
-    background-color: #acdced;
-    position: relative;
-    top: 1vh;
-    left: -110px;
-    opacity: 0.5;
-    border-radius: 300px 300px 0 0;
-    text-align: left;
-  }
-  .hills:before,
-  .hills:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    border-radius: 300px 300px 0 0;
-  }
-  .hills:before {
-    width: 250px;
-    height: 110px;
-    bottom: 0;
-    right: -120px;
-  }
-
-  .wheel {
-    z-index: 10;
-    width: 192px;
-    height: 192px;
-    position: absolute;
-    left: -9vw;
-    top: -13vh;
-    animation: spin 15s linear infinite;
-  }
-
-  .windwheel {
-    position: absolute;
-    width: 8px;
-    height: 100px;
-    background-color: #153d5a;
-    margin-right: 10px;
-    left: 92px;
-  }
-  .windwheel:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 15px;
-    height: 75px;
-    left: 8px;
-  }
-
-  .windwheel2 {
-    transform: rotate(90deg);
-    top: 46px;
-    left: 138px;
-    z-index: 40;
-  }
-
-  .windwheel3 {
-    transform: rotate(180deg);
-    top: 92px;
-  }
-
-  .windwheel4 {
-    transform: rotate(-90deg);
-    top: 46px;
-    left: 46px;
-  }
-  .windwheel4:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 22px;
-    height: 22px;
-    bottom: -7px;
-    left: -7px;
-    transform: rotate(45deg);
-  }
-
-  .roof {
-    position: absolute;
-    z-index: 9;
-    margin-left: 1.5vw;
-    bottom: 14vh;
-    width: 5vh;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 70px solid #5cdfdd;
-  }
-
-  .mill {
-    position: absolute;
-    left: 1vh;
-    top: 5vh;
-    width: 100px;
-    height: 80px;
-    background-color: #fff;
-  }
-  .mill:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 30px;
-    width: 40px;
-    bottom: 0;
-    left: 28px;
-    border-radius: 40% 40% 0 0;
-    border-left: 5px solid #acdced;
-  }
-  .mill:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 20px;
-    width: 30px;
-    top: 20px;
-    left: 32px;
-    border-radius: 18px;
-    border-left: 5px solid #acdced;
-  }
-
-  .house {
-    position: absolute;
-    width: 20vw;
-    height: 10vh;
-    background-color: #fff;
-    top: 7vh;
-    left: 30vw;
-    border-top: 20px solid #5cdfdd;
-  }
-  .house:after {
-    content: "";
-    position: absolute;
-    background-color: #153d5a;
-    width: 20px;
-    height: 30px;
-    bottom: 0;
-    left: 30px;
-    border-left: 5px solid #acdced;
-  }
-
-  .bush {
-    position: relative;
-    top: -19vh;
-    left: -60px;
-  }
-
-  .bush li {
-    float: left;
-    list-style: none;
-    background-color: #5cdfdd;
-    width: 40px;
-    height: 29px;
-    border-radius: 100px 100px 0 0;
-  }
-
-  .bush2 {
-    top: 178px;
-    left: 160px;
-  }
-
-  .tree {
-    position: absolute;
-    left: -50px;
-    top: -2.5vh;
-  }
-  .tree li {
-    list-style: none;
-    background-color: #153d5a;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    margin-bottom: -15px;
-  }
-  .tree:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    width: 3px;
-    height: 80px;
-    top: 3vh;
-    right: 21px;
-  }
-
-  .cloud {
-    position: relative;
-
-    left: 3vw;
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 20px;
-    border-bottom: 4px solid #e1e8f2;
-    animation: cloud 4s infinite alternate;
-  }
-
-  .cloud:nth-of-type(2) {
-    left: 40%;
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud:nth-of-type(3) {
-    left: 70%;
-
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud__item {
-    position: relative;
-    margin-top: 2px;
-    border-radius: 50%;
-    border-top: 15px solid #e1e8f2;
-    border-left: 15px solid #e1e8f2;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transform: rotateZ(45deg);
-  }
-
-  .cloud__item:nth-of-type(2) {
-    margin-left: -9px;
-    margin-top: 0px;
-    border-top: 20px solid #e1e8f2;
-    border-left: 20px solid #e1e8f2;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes clouds {
-    100% {
-      transform: translateX(340px);
-    }
-  }
-  @keyframes cloud {
-    0% {
-      transform: translateX(-10%);
-    }
-
-    100% {
-      transform: translateX(20%);
-    }
+    overflow: hidden;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   /*asset tracking page*/
@@ -1106,305 +823,15 @@ body {
   .text-5 {
     position: relative;
   }
-  /* Variables */ /* Reset */
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } /* Generic */
-  /*body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #c4c4c4;
-}*/
 
-  #team {
-    padding-bottom: 10vh;
-    text-align: left;
-    /* position: relative;
-    width: 100vw;
-    height: 100vh; */
-    background-color: #c4c4c4;
-  }
-  .main {
-    text-align: left;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    transform: scale(0.5);
-  }
-
-  .windmill {
-    position: relative;
-    left: 20vh;
-    top: 30vh;
-    text-align: left;
-  }
-
-  .hills {
-    width: 60px;
-    height: 20px;
-    background-color: #acdced;
-    position: relative;
-    top: 7vh;
-    left: -110px;
-    opacity: 0.5;
-    border-radius: 300px 300px 0 0;
-    text-align: left;
-  }
-  .hills:before,
-  .hills:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    border-radius: 300px 300px 0 0;
-  }
-  .hills:before {
-    width: 250px;
-    height: 110px;
-    bottom: 0;
-    right: -120px;
-  }
-
-  .wheel {
-    z-index: 10;
-    width: 192px;
-    height: 192px;
-    position: absolute;
-    bottom: 10vh;
-    left: -2.5vh;
-    animation: spin 15s linear infinite;
-  }
-
-  .windwheel {
-    position: absolute;
-    width: 8px;
-    height: 100px;
-    background-color: #153d5a;
-    margin-right: 10px;
-    left: 92px;
-  }
-  .windwheel:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 15px;
-    height: 75px;
-    left: 8px;
-  }
-
-  .windwheel2 {
-    transform: rotate(90deg);
-    top: 46px;
-    left: 138px;
-    z-index: 40;
-  }
-
-  .windwheel3 {
-    transform: rotate(180deg);
-    top: 92px;
-  }
-
-  .windwheel4 {
-    transform: rotate(-90deg);
-    top: 46px;
-    left: 46px;
-  }
-  .windwheel4:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 22px;
-    height: 22px;
-    bottom: -7px;
-    left: -7px;
-    transform: rotate(45deg);
-  }
-
-  .roof {
-    position: relative;
-
-    z-index: 9;
-    margin-left: 1.5vw;
-    bottom: 4vh;
-    width: 5vh;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 70px solid #5cdfdd;
-  }
-
-  .mill {
-    position: relative;
-    left: 1vh;
-    top: -40px;
-    width: 100px;
-    height: 80px;
-    background-color: #fff;
-  }
-  .mill:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 30px;
-    width: 40px;
-    bottom: 0;
-    left: 28px;
-    border-radius: 40% 40% 0 0;
-    border-left: 5px solid #acdced;
-  }
-  .mill:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 20px;
-    width: 30px;
-    top: 20px;
-    left: 32px;
-    border-radius: 18px;
-    border-left: 5px solid #acdced;
-  }
-
-  .house {
-    position: absolute;
-    width: 10vw;
-    height: 10vh;
-    background-color: #fff;
-    top: 7vh;
-    left: 30vw;
-    border-top: 20px solid #5cdfdd;
-  }
-  .house:after {
-    content: "";
-    position: absolute;
-    background-color: #153d5a;
-    width: 20px;
-    height: 30px;
-    bottom: 0;
-    left: 30px;
-    border-left: 5px solid #acdced;
-  }
-
-  .bush {
-    position: relative;
-    top: -19vh;
-    left: -60px;
-  }
-
-  .bush li {
-    float: left;
-    list-style: none;
-    background-color: #5cdfdd;
-    width: 40px;
-    height: 29px;
-    border-radius: 100px 100px 0 0;
-  }
-
-  .bush2 {
-    position: relative;
-    padding-top: 9vh;
-  }
-
-  .tree {
-    position: absolute;
-    left: -80px;
-    top: -5px;
-  }
-  .tree li {
-    list-style: none;
-    background-color: #153d5a;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    margin-bottom: -15px;
-  }
-  .tree:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    width: 3px;
-    height: 80px;
-    top: 3vh;
-    right: 21px;
-  }
-
-  .cloud {
-    position: relative;
-    bottom: 7vw;
-    left: 3vw;
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 20px;
-    border-bottom: 4px solid #e1e8f2;
-    animation: cloud 4s infinite alternate;
-  }
-
-  .cloud:nth-of-type(2) {
-    left: 40%;
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud:nth-of-type(3) {
-    left: 70%;
-
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud__item {
-    position: relative;
-    margin-top: 2px;
-    border-radius: 50%;
-    border-top: 15px solid #e1e8f2;
-    border-left: 15px solid #e1e8f2;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transform: rotateZ(45deg);
-  }
-
-  .cloud__item:nth-of-type(2) {
-    margin-left: -9px;
-    margin-top: 0px;
-    border-top: 20px solid #e1e8f2;
-    border-left: 20px solid #e1e8f2;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes clouds {
-    100% {
-      transform: translateX(340px);
-    }
-  }
-  @keyframes cloud {
-    0% {
-      transform: translateX(-10%);
-    }
-
-    100% {
-      transform: translateX(20%);
-    }
-  }
-  /*asset*/
+  /*team*/
 
   .main-text-3 {
     position: relative;
-    font-size: 10vh;
+    font-size: 5vh;
   }
 
-  #asset {
+  #team {
     position: relative;
     background: #fff;
     width: 100vw;
@@ -1423,6 +850,7 @@ body {
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 
     background-repeat: repeat-x;
   }
@@ -1486,6 +914,16 @@ body {
   .particles > .particle.bigger {
     width: 25px;
     height: 25px;
+  }
+
+  #asset {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .title-2 {
+    position: relative;
+    padding-top: 13vh;
   }
 
   /*autoamtion*/
@@ -1947,309 +1385,14 @@ body {
     text-align: left;
   }
 
-  /*page 2*/
-  /* Variables */ /* Reset */
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } /* Generic */
-  #team {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-color: #c4c4c4;
-  }
-
-  .main-text-2 {
-    font-size: 10vh;
-  }
-
-  .text-5 {
-    position: relative;
-    padding-top: 2vh;
-  }
-
-  .text-4 {
-    position: relative;
-    text-align: left;
-    padding-top: 15vh;
-  }
-  .main {
-    width: 100vw;
-    height: 600vh;
-    position: absolute;
-    transform: scale(0.7);
-  }
-
-  .windmill {
-    position: absolute;
-    left: 60vh;
-    top: 40vh;
-  }
-
-  .hills {
-    width: 30vw;
-    height: 35vh;
-    background-color: #acdced;
-    position: absolute;
-    top: 12vh;
-    left: 25vh;
-    opacity: 0.5;
-    border-radius: 300px 300px 0 0;
-  }
-  .hills:before,
-  .hills:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    border-radius: 300px 300px 0 0;
-  }
-  .hills:before {
-    width: 250px;
-    height: 110px;
-    bottom: 0;
-    right: -120px;
-  }
-
-  .wheel {
-    z-index: 10;
-    width: 192px;
-    height: 192px;
-    position: absolute;
-    left: 21vw;
-    top: 10vh;
-    animation: spin 15s linear infinite;
-  }
-
-  .windwheel {
-    position: absolute;
-    width: 8px;
-    height: 100px;
-    background-color: #153d5a;
-    margin-right: 10px;
-    left: 92px;
-  }
-  .windwheel:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 15px;
-    height: 75px;
-    left: 8px;
-  }
-
-  .windwheel2 {
-    transform: rotate(90deg);
-    top: 46px;
-    left: 138px;
-    z-index: 40;
-  }
-
-  .windwheel3 {
-    transform: rotate(180deg);
-    top: 92px;
-  }
-
-  .windwheel4 {
-    transform: rotate(-90deg);
-    top: 46px;
-    left: 46px;
-  }
-  .windwheel4:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    opacity: 0.7;
-    width: 22px;
-    height: 22px;
-    bottom: -7px;
-    left: -7px;
-    transform: rotate(45deg);
-  }
-
-  .roof {
-    position: absolute;
-    z-index: 9;
-    left: 22.5vw;
-    top: 17vh;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 70px solid #5cdfdd;
-  }
-
-  .mill {
-    position: absolute;
-    left: 24vw;
-    top: 27vh;
-    width: 100px;
-    height: 120px;
-    background-color: #fff;
-  }
-  .mill:after {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 50px;
-    width: 40px;
-    bottom: 0;
-    left: 28px;
-    border-radius: 40% 40% 0 0;
-    border-left: 5px solid #acdced;
-  }
-  .mill:before {
-    position: absolute;
-    content: "";
-    background-color: #153d5a;
-    height: 40px;
-    width: 30px;
-    top: 20px;
-    left: 32px;
-    border-radius: 18px;
-    border-left: 5px solid #acdced;
-  }
-
-  .house {
-    position: absolute;
-    width: 80px;
-    height: 60px;
-    background-color: #fff;
-    top: 36vh;
-    left: 31vw;
-    border-top: 20px solid #5cdfdd;
-  }
-  .house:after {
-    content: "";
-    position: absolute;
-    background-color: #153d5a;
-    width: 20px;
-    height: 30px;
-    bottom: 0;
-    left: 30px;
-    border-left: 5px solid #acdced;
-  }
-
-  .bush {
-    position: relative;
-    top: 40vh;
-    left: 90vh;
-  }
-
-  .bush li {
-    float: left;
-    list-style: none;
-    background-color: #5cdfdd;
-    width: 40px;
-    height: 25px;
-    border-radius: 100px 100px 0 0;
-  }
-
-  .bush2 {
-    position: relative;
-    bottom: 4vw;
-    left: 160px;
-  }
-
-  .tree {
-    position: absolute;
-    left: 13vw;
-    top: 30vh;
-  }
-  .tree li {
-    list-style: none;
-    background-color: #153d5a;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    margin-bottom: -15px;
-  }
-  .tree:after {
-    content: "";
-    position: absolute;
-    background-color: #acdced;
-    width: 3px;
-    height: 80px;
-    top: 25px;
-    right: 21px;
-  }
-
-  .cloud {
-    position: absolute;
-    top: 20vh;
-    left: 60vw;
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 20px;
-    border-bottom: 4px solid #e1e8f2;
-    animation: cloud 4s infinite alternate;
-  }
-
-  .cloud:nth-of-type(2) {
-    left: 40%;
-    top: 10vh;
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud:nth-of-type(3) {
-    left: 70%;
-    top: 30vh;
-    animation: cloud 4s infinite reverse alternate 0.5s;
-  }
-
-  .cloud__item {
-    position: relative;
-    margin-top: 2px;
-    border-radius: 50%;
-    border-top: 15px solid #e1e8f2;
-    border-left: 15px solid #e1e8f2;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transform: rotateZ(45deg);
-  }
-
-  .cloud__item:nth-of-type(2) {
-    margin-left: -9px;
-    margin-top: 0px;
-    border-top: 20px solid #e1e8f2;
-    border-left: 20px solid #e1e8f2;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes clouds {
-    100% {
-      transform: translateX(340px);
-    }
-  }
-  @keyframes cloud {
-    0% {
-      transform: translateX(-10%);
-    }
-
-    100% {
-      transform: translateX(20%);
-    }
-  }
-
-  /*asset*/
+  /*team*/
 
   .main-text-3 {
     position: relative;
     font-size: 10vh;
   }
 
-  #asset {
+  #team {
     position: relative;
     background: #fff;
     width: 100vw;
@@ -2332,6 +1475,18 @@ body {
   .particles > .particle.bigger {
     width: 25px;
     height: 25px;
+  }
+
+  /* asset */
+  #asset {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  .title-2 {
+    position: relative;
+    padding-top: 13vh;
   }
   /*autoamtion*/
 
