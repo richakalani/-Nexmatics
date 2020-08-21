@@ -17,9 +17,9 @@ body {
   /*pandemic */
 
   #pandemic {
-    background-color: #c4c4c4;
+    background-color: #FFFEFF;
     position: relative;
-    height: 150vh;
+    height: 100vh;
     width: 100vw;
   }
 
@@ -322,7 +322,7 @@ body {
     background-color: #c4c4c4; */
     padding-top: 10vh;
     position: relative;
-    background: #fff;
+    background: #FFFDFF;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -833,7 +833,7 @@ body {
 
   #team {
     position: relative;
-    background: #fff;
+    background: #FFFDFF;
     width: 100vw;
     /* height: 100vh; */
     overflow: hidden;
@@ -1055,15 +1055,15 @@ body {
   /*pandemic */
 
   #pandemic {
-    background-color: #c4c4c4;
+    background-color: #FFFEFF;
     /* position: relative; */
     /* height: 150vh;
     width: 100vw; */
   }
 
-  .zoom:hover {
+  /*.zoom:hover {
     animation: ripple 15s infinite;
-  }
+  }*/
 
   .zoom {
     position: relative;
@@ -1394,7 +1394,7 @@ body {
 
   #team {
     position: relative;
-    background: #fff;
+    background: #FFFDFF;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -1617,14 +1617,14 @@ body {
 
   #pandemic {
     position: relative;
-    background-color: #c4c4c4;
+    background-color: #FFFEFF;
     height: 150vh;
     width: 100vw;
   }
 
   .zoom {
     position: absolute;
-    padding-left: 140vh;
+    padding-left: 120vh;
     padding-top: 20vh;
   }
 
@@ -1643,9 +1643,9 @@ body {
     padding-top: 15vh;
   }
 
-  .zoom:hover {
+  /*.zoom:hover {
     animation: ripple 15s infinite;
-  }
+  }*/
 
   @keyframes ripple {
     0% {
