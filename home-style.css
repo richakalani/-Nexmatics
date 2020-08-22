@@ -415,11 +415,11 @@ body {
   #automation {
     padding-top: 20vh;
     position: relative;
-    background: #222;
+    background: #FFFDFF;
     overflow: hidden;
     width: 100vw;
     height: 145vh;
-    color: white;
+    color: black;
   }
 
   .view {
@@ -929,11 +929,11 @@ body {
   /*autoamtion*/
 
   #automation {
-    background: #222;
+    background: #FFFDFF;
     overflow: hidden;
     /* width: 100vw;
     height: 100vh; */
-    color: white;
+    color: black;
     /* position: relative; */
   }
 
@@ -1491,11 +1491,11 @@ body {
   /*autoamtion*/
 
   #automation {
-    background: #222;
+    background: #FFFDFF;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    color: white;
+    color: black;
     position: relative;
   }
 
