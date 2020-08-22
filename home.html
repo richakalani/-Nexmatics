@@ -196,7 +196,7 @@
 </div>
 
 <div id="team">
-<div class="zoom"><video id="vid2" width="500" loop controls="false">
+<div class="zoom"><video width="500" loop controls="false">
   <source src="images/video.mp4" type="video/mp4">
 </video></div>
 <div class="container">
@@ -302,7 +302,7 @@
 
  <div id="pandemic">
    <!-- <div data-aos="flip-down"> -->
-<div class="zoom"><video id="vid2" width="500" loop controls="false">
+<div class="zoom"><video width="500" loop controls="false">
   <source src="images/video2.mp4" type="video/mp4">
 </video></div>
 <!-- </div> -->
@@ -493,7 +493,21 @@
       });
     </script>
     <script>
-      var vids = $("#vid2"); 
+       var vids = $("video"); 
+$.each(vids, function(){
+       this.controls = false; 
+}); 
+//Loop though all Video tags and set Controls as false
+
+$("video").click(function() {
+  //console.log(this); 
+  if (this.paused) {
+    this.play();
+  } else {
+    this.pause();
+  }
+});
+     /* var vids = $("#vid2"); 
 $.each(vids, function(){
        this.controls = false; 
 }); 
@@ -506,7 +520,7 @@ $("#vid2").click(function() {
   } else {
     this.pause();
   }
-});
+});*/
 
 var vids = $("#vid3"); 
 $.each(vids, function(){
