@@ -196,46 +196,7 @@
 </div>
 
 <div id="team">
-  <!--<div class="windmill">
-  <div class="hills"></div>
-  <div class="wheel">
-    <div class="windwheel"></div>
-    <div class="windwheel windwheel2"></div>
-    <div class="windwheel windwheel3"></div>
-    <div class="windwheel windwheel4"></div>
-  </div>
-  <div class="roof"></div>
-  <div class="mill"></div>
-  <div class="house"></div>
-  <ul class="tree d-none d-sm-block">
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-  <ul class="bush d-none d-lg-block d-xl-none">
-    <li></li>
-    <li></li>
-  </ul>
-  <ul class="bush bush2 d-none d-sm-block">
-    <li></li>
-    <li></li>
-  </ul>
-  </div>
-<div class="clouds "> 
-<div class="cloud"> 
-<div class="cloud__item"></div> 
-<div class="cloud__item"></div> 
-</div> 
-<div class="cloud"> 
-<div class="cloud__item"></div> 
-<div class="cloud__item"></div> 
-</div> 
-<div class="cloud"> 
-<div class="cloud__item"></div> 
-<div class="cloud__item"></div> 
-</div>
-</div>-->
-<div class="zoom"><video width="500" loop controls="false">
+<div class="zoom"><video id="vid2" width="500" loop controls="false">
   <source src="images/video.mp4" type="video/mp4">
 </video></div>
 <div class="container">
@@ -263,7 +224,11 @@
 </div>
 
 <div id="asset">
-
+  <div class="zoom">
+    <video id="vid3" width="500" loop controls="false">
+      <source src="images/video3.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="bg3">
   <div class="container">
     <div class="row">
@@ -277,12 +242,10 @@
  <div class="container">
   <div class="row">
     <div class="subtitle col-md-6">
-      <h6>The goal of the Naxmatic's Asset Tracking system is to maximize asset control efficiency and minimize equipment loss.
+      <h6>The goal of the Nexmatic's Asset Tracking system is to maximize asset control efficiency and minimize equipment loss.
       </h6>
       <p>Asset tracking is just as important as managing your inventory because you need to know the location, status, maintanance schedule, and other important information about your organization's physical assets. Indeed, asset tracking is important to your organization's bottom line and compilance, as you are responsible for locating and replacing lost or missing physical assets, as well as those that have come to the end of their lifecycle.</p>
-      <div class=" img3 d-block d-sm-none">
-      <img src="3.1 people with table.png" style="height: 20vh;">
-      </div>
+      
       
     </div>
     
@@ -292,7 +255,7 @@
 
 
 
-<div class='particles'></div>
+<!--<div class='particles'></div>-->
   
 </div>
 </div>
@@ -308,7 +271,11 @@
     <div class="circle"></div>
   </div>
 </div>
-
+<!--<div class="zoom">
+  <video id="vid3" width="500" loop controls="false">
+    <source src="images/video4.mp4" type="video/mp4">
+  </video>
+</div>-->
   
     <div class="container">
       <div class="row">
@@ -335,7 +302,7 @@
 
  <div id="pandemic">
    <!-- <div data-aos="flip-down"> -->
-<div class="zoom"><video width="500" loop controls="false">
+<div class="zoom"><video id="vid2" width="500" loop controls="false">
   <source src="images/video2.mp4" type="video/mp4">
 </video></div>
 <!-- </div> -->
@@ -526,13 +493,26 @@
       });
     </script>
     <script>
-      var vids = $("video"); 
+      var vids = $("#vid2"); 
 $.each(vids, function(){
        this.controls = false; 
 }); 
 //Loop though all Video tags and set Controls as false
 
-$("video").click(function() {
+$("#vid2").click(function() {
+  //console.log(this); 
+  if (this.paused) {
+    this.play();
+  } else {
+    this.pause();
+  }
+});
+
+var vids = $("#vid3"); 
+$.each(vids, function(){
+       this.controls = false; 
+}); 
+$("#vid3").hover(function() {
   //console.log(this); 
   if (this.paused) {
     this.play();

@@ -338,7 +338,7 @@ body {
   #asset {
     padding-top: 10vh;
     position: relative;
-    background: #fff;
+    background: #FFFDFF;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -845,7 +845,7 @@ body {
   }
 
   .bg3 {
-    background-image: url("Slide_3_Illustration.png");
+    /*background-image: url("Slide_3_Illustration.png");*/
 
     background-size: 100vw 100vh;
     background-position: center;
@@ -1406,7 +1406,7 @@ body {
   }
 
   .bg3 {
-    background-image: url("Slide_3_Illustration.png");
+    /*background-image: url("Slide_3_Illustration.png");*/
 
     background-size: 100vw 100vh;
     background-position: center;
